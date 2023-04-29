@@ -1,0 +1,90 @@
+body{
+  background: radial-gradient(#1b0f15 15%, transparent 16%, transparent 49%, #1b0f15 50%, transparent 51%),radial-gradient(circle at top left, #1b0f15 10%, transparent 10%, transparent 39%, #1b0f15 40%, transparent 41%),radial-gradient(circle at top right, #1b0f15 10%, transparent 10%, transparent 39%, #1b0f15 40%, transparent 41%),radial-gradient(circle at bottom left, #1b0f15 10%, transparent 10%, transparent 39%, #1b0f15 40%, transparent 41%),radial-gradient(circle at bottom right, #1b0f15 10%, transparent 10%, transparent 39%, #1b0f15 40%, transparent 41%);
+        background-size: 5em 5em;
+        background-color: #000000;
+        opacity: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+  
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.796);
+  border-radius: 2px;
+  padding: 3px;
+}
+
+input:hover{
+  outline: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.796);
+}
+
+input:focus{
+  outline: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.796);
+}
+
+label:has(+ input:required)::after, .requerido  {
+  display: inline-block;
+  content: "*";
+  font-size: 12px;
+  color:rgb(255, 74, 74) ;
+}
+
+a{
+  color: rgb(255, 143, 197);
+}
+form>*:last-child{
+  text-align: center;
+}
+
+.explicacion{
+  margin: 0;
+  font-size: smaller;
+  color: rgb(178, 178, 178);
+}
+
+button{
+  background-color: #ff8fc5;
+  border: unset;
+  border-radius: 2px;
+  font-size: larger;
+  height: 40px;
+  cursor: pointer;
+}
+button[disabled]{
+  cursor: unset;
+  background-color: #9b5978;
+}
+
+.error{
+  font-size: small;
+  margin: 0;
+  color: rgb(255, 212, 212);
+}
+
+.escondido{
+  display: none;
+}
